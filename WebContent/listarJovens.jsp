@@ -23,6 +23,7 @@
 				<th scope="col">Nascimento</th>
 				<th scope="col">RG</th>
 				<th scope="col"></th>
+				<th scope="col"></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -39,7 +40,9 @@
 					<td><%=jovem.getNomeCompleto() %></td>
 					<td><%=jovem.getDataNascimento() %></td>
 					<td><%=jovem.getRg() %></td>
-					<td><a href="Deletar?id=<%=jovem.getRg()%>">Deletar</a></td>
+					<td><a href="Deletar?id=<%=jovem.getRg()%>">Deletar</a><br> </td>
+					<td><a href="Atualizar?id=<%=jovem.getRg()%>">Atualizar</a></td>
+					
 				</tr>
 			<%i++;} %>
 		</tbody>
